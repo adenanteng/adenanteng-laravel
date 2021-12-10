@@ -1,0 +1,68 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer base {
+    h1 {
+        @apply font-head;
+    }
+    h2 {
+        @apply font-head;
+    }
+    h3 {
+        @apply font-head;
+    }
+    /*h4 {*/
+    /*    @apply font-head;*/
+    /*}*/
+    /*h5 {*/
+    /*    @apply font-medium text-white;*/
+    /*}*/
+    /*h6 {*/
+    /*    @apply font-medium font-sans;*/
+    /*}*/
+    /*b {*/
+    /*    @apply ;*/
+    /*}*/
+    /*p {*/
+    /*    @apply text-sm text-gray-600 dark:text-gray-400;*/
+    /*}*/
+    a {
+        @apply cursor-pointer;
+    }
+    /*svg {*/
+    /*    @apply transform hover:scale-125 hover:z-30 transition duration-200;*/
+    /*}*/
+    /*input {*/
+    /*    @apply dark:bg-gray-700 dark:text-gray-200;*/
+    /*}*/
+}
+
+@layer components {
+    .text-gray-900 {
+        @apply dark:text-gray-100;
+    }
+    .text-gray-700 {
+        @apply dark:text-gray-200;
+    }
+    .text-gray-500 {
+        @apply dark:text-gray-400;
+    }
+
+    .bg-gray-50 {
+        @apply dark:bg-gray-700;
+    }
+    .bg-white {
+        @apply dark:bg-gray-900 transition duration-500;
+    }
+
+    .border-gray-300 {
+        @apply dark:border-gray-700;
+    }
+    .border-gray-200 {
+        @apply dark:border-gray-800;
+    }
+    .box {
+        @apply bg-white text-gray-700 px-5 py-3 flex items-center grid cursor-pointer rounded-lg;
+    }
+}
