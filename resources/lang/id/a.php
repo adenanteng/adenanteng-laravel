@@ -37,10 +37,14 @@ return [
     'empty desc' => "persis seperti hatiku. huhuhu",
 
     'starter t1' => "Sepertinya ini pertama kalinya kamu mengakses situs ini, </br> Siapa namamu?",
+    'starter input' => "Tulis namamu disini",
     'starter b1' => "Namaku",
-    'starter t2' => 'Halo kak <span x-text="name" class="mx-1"></span>, </br> Apakah anda HRD dari sebuah perusahaan?',
+    'starter t2' => 'Halo kak, apakah kak <span x-text="name" class="mx-1"></span>, </br> adalah HR dari sebuah perusahaan?',
     'starter ya' => "Ya",
     'starter bukan' => "Bukan",
+    'starter t3' => 'Baik kak <span x-text="name" class="mx-1 text-transform: capitalize"></span>, </br>kami menyarankan untuk langsung ke halaman Ringkasan/CV',
+    'starter cv' => "Pergi ke Resume/CV",
+    'starter bb' => "Tidak perlu",
 
     'new update' => "Pembaharuan",
     'visit my resume page' => "Kunjungi laman ringkasan saya",

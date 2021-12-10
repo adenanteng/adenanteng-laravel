@@ -42,9 +42,9 @@
 
                 </div>
 
-                <button type="submit" class="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100">
+                <a download type="button" href="{{ asset('pdf/cv-aden-anteng.pdf') }}" class="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100">
                     {{ __('cv.download') }}
-                </button>
+                </a>
 
 
             </div>

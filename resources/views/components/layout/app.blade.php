@@ -5,6 +5,8 @@
     <meta name="author" content="Aden Anteng">
     <meta charset="utf-8">
 
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
+
     <!--  Essential META Tags -->
     <meta name="twitter:card" content="summary_large_image"/>
     <meta name="twitter:title" content="Aden Anteng"/>
