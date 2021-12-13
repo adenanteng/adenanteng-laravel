@@ -1,5 +1,5 @@
 <div class="relative bg-gray-800 min-h-screen overflow-hidden">
-    <div x-data="{ open: false }" class="fixed w-screen z-20 bg-gray-800 py-6">
+    <div x-data="{ open: false }" class="fixed w-screen z-20 bg-gray-800 py-2 sm:py-6">
         <nav class="relative max-w-6xl mx-auto flex items-center justify-between px-4 sm:px-6" aria-label="Global">
             <div class="flex items-center flex-1">
                 <div class="flex items-center justify-between w-full md:w-auto">
@@ -47,7 +47,7 @@
             </div>
         </nav>
 
-        <div x-show="open" class=" absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+        <nav x-show="open" class=" absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
             <div class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
                 <div class="px-5 pt-4 flex items-center justify-between">
                     <div>
@@ -85,7 +85,7 @@
                 @endauth
 
             </div>
-        </div>
+        </nav>
     </div>
 
     <div class="">
