@@ -13,11 +13,11 @@ return [
     |
     */
 
-    'sign in to your account' => "Masuk ke akunmu",
-    'create your account' => "Buat akun barumu",
+    'sign in to your account' => "Masuk ke akun",
+    'create your account' => "Buat akun baru",
     'sign in' => "Masuk",
-    'register' => "Mendaftar",
-    'sign in existing account' => "masuk ke akunmu yang sudah ada",
+    'register' => "Daftar",
+    'sign in existing account' => "masuk ke akun yang sudah ada",
     'or' => "atau",
 
     'name' => "Nama",
@@ -25,7 +25,7 @@ return [
     'password' => "Sandi",
     'password confirm' => "Konfirmasi Sandi",
     'remember me' => "Ingat saya",
-    'forgot your password?' => "Lupa sandimu?",
+    'forgot your password?' => "Lupa sandi?",
 
     'dark' => "Gelap",
     'light' => "Terang",
@@ -39,7 +39,7 @@ return [
     'starter t1' => "Sepertinya ini pertama kalinya kamu mengakses situs ini, </br> Siapa namamu?",
     'starter input' => "Tulis namamu disini",
     'starter b1' => "Namaku",
-    'starter t2' => 'Halo kak, apakah kak <span x-text="name" class="mx-1"></span>, </br> adalah HR dari sebuah perusahaan?',
+    'starter t2' => 'Apakah kak <span x-text="name" class="mx-1"></span> adalah HR dari sebuah perusahaan?',
     'starter ya' => "Ya",
     'starter bukan' => "Bukan",
     'starter t3' => 'Baik kak <span x-text="name" class="mx-1 text-transform: capitalize"></span>, </br>kami menyarankan untuk langsung ke halaman Ringkasan/CV',
@@ -48,9 +48,9 @@ return [
 
     'new update' => "Pembaharuan",
     'visit my resume page' => "Kunjungi laman ringkasan saya",
-    'wel t1' => "Digoreng",
-    'wel t2' => "Dadakan . . .",
-    'wel desc' => "- Tahu Bulat",
+    'wel t1' => "Buat anak ",
+    'wel t2' => "kok coba-coba . . .",
+    'wel desc' => "- Cap Lang",
 //    '' => "",
 //    '' => "",
 //    '' => "",

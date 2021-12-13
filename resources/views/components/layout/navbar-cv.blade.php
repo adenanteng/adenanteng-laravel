@@ -6,7 +6,7 @@
                     <x-layout.logo />
                     <div class=" flex items-center md:hidden" >
                         <button type="button" @click="open = !open" class="bg-gray-800 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-700 focus:outline-none focus:ring-2 focus-ring-inset focus:ring-white" aria-expanded="false">
-                            <span class="iconify" data-width="20" data-icon="fluent:list-20-regular"></span>
+                            <span class="iconify" data-width="30" data-icon="fluent:list-20-regular"></span>
                         </button>
                     </div>
                 </div>
@@ -16,9 +16,9 @@
                 </div>
             </div>
             <div class="hidden md:flex">
-                <button type="submit" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-gray-600 hover:bg-gray-700">
+                <a download type="button" href="{{ asset('pdf/cv-aden-anteng.pdf') }}" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-gray-600 hover:bg-gray-700">
                     {{ __('cv.download') }}
-                </button>
+                </a>
             </div>
         </nav>
 
@@ -26,7 +26,7 @@
             <div class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
                 <div class="px-5 pt-4 flex items-center justify-between">
                     <div>
-                        <span class="iconify text-white" data-icon="healthicons:animal-chicken-outline" data-flip="horizontal" data-width="40"></span>
+{{--                        <span class="iconify text-white" data-icon="healthicons:animal-chicken-outline" data-flip="horizontal" data-width="40"></span>--}}
                     </div>
                     <div class="-mr-2">
                         <button type="button" @click="open = !open" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">

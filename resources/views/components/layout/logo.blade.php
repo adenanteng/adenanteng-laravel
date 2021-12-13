@@ -1,6 +1,6 @@
 <div x-data="{ open: false }">
-    <button @click="open = true" @click.away="open = false" class="text-white hover:text-gray-300 flex items-center" >
-        <span class="iconify" data-icon="healthicons:animal-chicken-outline" data-flip="horizontal" data-width="40"></span>
+    <button @click="open = !open" @click.away="open = false" class="text-indigo-600 hover:text-indigo-700 flex items-center" >
+        <span class="iconify " data-icon="fluent:list-20-regular" data-flip="horizontal" data-width="30"></span>
     </button>
 
     <div x-show="open" class="absolute top-0 w-56 py-2 mt-8 transition transform origin-top-right ">
