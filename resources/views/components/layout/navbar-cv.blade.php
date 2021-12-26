@@ -1,5 +1,5 @@
-<div class="relative bg-gray-800 min-h-screen overflow-hidden">
-    <div x-data="{ open: false }" class="fixed w-screen z-30 bg-gray-800 pt-3 pb-1 sm:pt-6 sm:pb-3">
+<div class="relative bg-gray-100 min-h-screen overflow-hidden">
+    <div x-data="{ open: false }" class="fixed w-screen z-30 bg-gray-100 pt-3 pb-1 sm:pt-6 sm:pb-3">
         <nav class="relative max-w-6xl mx-auto flex items-center justify-between px-4 sm:px-6" aria-label="Global">
             <div class="flex items-center flex-1">
                 <div class="flex items-center justify-between w-full md:w-auto">

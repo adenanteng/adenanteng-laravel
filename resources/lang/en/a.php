@@ -39,10 +39,10 @@ return [
     'starter t1' => "Looks like this is your first time accessing this site, </br> What's your name?",
     'starter input' => "Write your name here",
     'starter b1' => "My name",
-    'starter t2' => 'Hello <span x-text="name" class="mx-1 text-transform: capitalize"></span>, </br> Are you HR of a company?',
+    'starter t2' => 'Hello <span x-text="urName" class="mx-1 text-transform: capitalize"></span>, </br> Are you HR of a company?',
     'starter ya' => "Yes",
     'starter bukan' => "No",
-    'starter t3' => 'Alright <span x-text="name" class="mx-1 text-transform: capitalize"></span>, </br>we suggest you to go directly to the Resume/CV page',
+    'starter t3' => 'Alright <span x-text="urName" class="mx-1 text-transform: capitalize"></span>, </br>we suggest you to go directly to the Resume/CV page',
     'starter cv' => "Go to Resume/CV",
     'starter bb' => "I prefer to walk alone",
 

@@ -1,8 +1,9 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
+const colors = require("tailwindcss");
 
 module.exports = {
-    mode: 'jit',
-    purge: [
+    // mode: 'jit',
+    content: [
         './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
         // './vendor/laravel/jetstream/**/*.blade.php',
         './storage/framework/views/*.php',
@@ -16,10 +17,12 @@ module.exports = {
                 sans: ['Poppins', ...defaultTheme.fontFamily.sans],
                 head: ['Josefin Sans', ...defaultTheme.fontFamily.sans],
             },
+            colors: {
+                green: colors.emerald,
+                yellow: colors.amber,
+                purple: colors.violet,
+            },
         },
-    },
-    variants: {
-        extend: {},
     },
     plugins: [
         require('@tailwindcss/forms'),

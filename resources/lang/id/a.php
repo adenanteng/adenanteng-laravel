@@ -39,10 +39,10 @@ return [
     'starter t1' => "Sepertinya ini pertama kalinya kamu mengakses situs ini, </br> Siapa namamu?",
     'starter input' => "Tulis namamu disini",
     'starter b1' => "Namaku",
-    'starter t2' => 'Apakah kak <span x-text="name" class="mx-1"></span> adalah HR dari sebuah perusahaan?',
+    'starter t2' => 'Apakah kak <span x-text="urName" class="mx-1"></span> adalah HR dari sebuah perusahaan?',
     'starter ya' => "Ya",
     'starter bukan' => "Bukan",
-    'starter t3' => 'Baik kak <span x-text="name" class="mx-1 text-transform: capitalize"></span>, </br>kami menyarankan untuk langsung ke halaman Ringkasan/CV',
+    'starter t3' => 'Baik kak <span x-text="urName" class="mx-1 text-transform: capitalize"></span>, </br>kami menyarankan untuk langsung ke halaman Ringkasan/CV',
     'starter cv' => "Pergi ke Resume/CV",
     'starter bb' => "Tidak perlu",
 

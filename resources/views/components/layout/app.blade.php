@@ -35,11 +35,15 @@
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
 
 </head>
-<body x-data="{ darkMode: localStorage.getItem('dark') === 'true', name:'' } "
+<body x-data="{ darkMode: localStorage.getItem('dark') === 'true'} "
       x-init="$watch('darkMode', val => localStorage.setItem('dark', val))"
       x-bind:class="{ 'dark': darkMode }"
 >
-    <div class="font-sans relative min-h-screen antialiased transition duration-500">
+    <div x-data="{ urName: localStorage.getItem('name')} "
+         x-init="$watch('urName', val => localStorage.setItem('name', val))"
+         x-bind:class="{ 'name': urName }"
+
+        class="font-sans relative min-h-screen antialiased transition duration-500">
         {{ $slot }}
     </div>
 

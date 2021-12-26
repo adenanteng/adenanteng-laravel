@@ -20,10 +20,10 @@
             </div>
             <div class="mt-5 sm:mt-8 sm:grid sm:grid-cols-2 space-y-5 sm:space-y-0 sm:gap-3 sm:grid-flow-row-dense" >
                 <div>
-                    <x-form.input id="name" type="text" name="name" placeholder="{{ __('a.starter input') }}" x-model="name" required autofocus />
+                    <x-form.input id="name" type="text" name="name" placeholder="{{ __('a.starter input') }}" x-model="urName" required autofocus />
                 </div>
                 <a type="button" @click="show=2" class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-indigo-600 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:col-start-2 sm:text-sm">
-                   {{__('a.starter b1')}}  <span x-text="name" class="mx-1 text-transform: capitalize"> </span>
+                   {{__('a.starter b1')}}  <span x-text="urName" class="mx-1 text-transform: capitalize"> </span>
                 </a>
             </div>
         </div>

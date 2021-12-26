@@ -1,48 +1,39 @@
-<div class="relative bg-gray-800 min-h-screen overflow-hidden">
-    <div x-data="{ open: false }" class="fixed w-screen z-20 bg-gray-800 pt-3 pb-1 sm:pt-6 sm:pb-3">
+<div class="relative bg-gray-100 min-h-screen overflow-hidden">
+    <div x-data="{ open: false }" class="fixed w-screen z-20 bg-gray-100 pt-3 pb-1 sm:pt-6 sm:pb-3">
         <nav class="relative max-w-6xl mx-auto flex items-center justify-between px-4 sm:px-6" aria-label="Global">
             <div class="flex items-center flex-1">
                 <div class="flex items-center justify-between w-full md:w-auto">
                     <x-layout.logo />
                     <div class=" flex items-center md:hidden" >
-                        <button type="button" @click="open = !open" class="bg-gray-800 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-700 focus:outline-none focus:ring-2 focus-ring-inset focus:ring-white" aria-expanded="false">
+                        <button type="button" @click="open = !open" class="rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-expanded="false">
                             <span class="iconify" data-width="30" data-icon="fluent:list-20-regular"></span>
                         </button>
                     </div>
                 </div>
                 <div class="hidden space-x-10 md:flex md:ml-10">
-                    <a href="{{ url('https://cv.adenanteng.com') }}" class="font-medium text-white hover:text-gray-300 hover:underline">Resume/CV</a>
+                    <a href="{{ url('https://cv.adenanteng.com') }}" class="px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:underline">Resume/CV</a>
 
                 </div>
             </div>
             <div class="hidden md:flex">
                 @auth
-                    @if(Route::currentRouteName() == 'home')
-    {{--                    <a href="{{ route('logout') }}" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-gray-600 hover:bg-gray-700">--}}
-    {{--                        Logout--}}
-    {{--                    </a>--}}
+                    @if(Route::currentRouteName() != 'home')
+                        <a href="{{ url('/home') }}" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-gray-600 hover:bg-gray-700">
+                            {{__('a.dashboard')}}
+                        </a>
+                    @else
                         <form method="POST" action="{{ route('logout') }}">
                             @csrf
                             <button type="submit" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-gray-600 hover:bg-gray-700">
                                 {{__('a.logout')}}
                             </button>
                         </form>
-                    @else
-                        <a href="{{ url('/home') }}" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-gray-600 hover:bg-gray-700">
-                            {{__('a.dashboard')}}
-                        </a>
                     @endif
 
                 @elseguest
-                    @if(Route::currentRouteName() == 'welcome')
-                        <a href="{{ route('register') }}" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-gray-600 hover:bg-gray-700">
-                            {{__('a.register')}}
-                        </a>
-                    @else
-                        <a href="{{ route('login') }}" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-gray-600 hover:bg-gray-700">
-                            {{__('a.sign in')}}
-                        </a>
-                    @endif
+                    <a href="{{ route('login') }}" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-gray-600 hover:bg-gray-700">
+                        {{__('a.sign in')}}
+                    </a>
                 @endauth
             </div>
         </nav>
@@ -92,13 +83,13 @@
     {{ $slot }}
     </div>
 
-    <footer class="absolute inset-x-0 bottom-0 bg-gray-700 ">
-        <div class="max-w-6xl mx-auto flex items-center justify-between py-4">
-           <div class="">
+{{--    <footer class="absolute inset-x-0 bottom-0 bg-gray-700 ">--}}
+{{--        <div class="max-w-6xl mx-auto flex items-center justify-between py-4">--}}
+{{--           <div class="">--}}
 
-           </div>
-        </div>
-    </footer>
+{{--           </div>--}}
+{{--        </div>--}}
+{{--    </footer>--}}
 
     <div x-data="{ start: localStorage.getItem('starter') === 'true'} "
          x-init="$watch('start', val => localStorage.setItem('starter', val))"

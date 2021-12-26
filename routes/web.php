@@ -43,6 +43,10 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => [ 'l
 
     Route::get('/starter', [HomeController::class, 'starter'])->name('starter');
 
+    Route::resource('ajj', WelcomeController::class);
+
+//    Route::resource('sisw', \App\Http\Controllers\QuotesControllers::class);
+
     require base_path('vendor/laravel/fortify/routes/routes.php');
     //require base_path('vendor/laravel/jetstream/routes/livewire.php');
 
