@@ -50,6 +50,9 @@
             <x-form.label for="email" value="{{ __('a.email') }}" />
             <div class="mt-1">
                 <x-form.input id="email" type="email" name="email" placeholder="{{ __('a.email') }}" :value="old('email')" required autofocus />
+                <p class="mt-1 hidden peer-invalid:block text-pink-600 text-sm">
+                    Please provide a valid email address.
+                </p>
             </div>
         </div>
 

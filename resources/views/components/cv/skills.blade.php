@@ -4,7 +4,7 @@
         <x-slot name="title">{{ __('cv.skills_tools') }}</x-slot>
     </x-layout.title>
 
-    <div class="grid grid-cols-2 sm:grid-cols-3 gap-5 flex items-start" >
+    <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 flex items-start group" >
         <x-layout.box>
             <x-slot name="icon">simple-icons:tailwindcss</x-slot>
             <x-slot name="title">Tailwind CSS</x-slot>
@@ -38,7 +38,7 @@
         <x-slot name="title">{{ __('cv.skills_doing') }}</x-slot>
     </x-layout.title>
 
-    <div class="grid grid-cols-2 gap-5"  >
+    <div class="grid grid-cols-2 gap-2 group"  >
 
         <x-layout.box>
             <x-slot name="icon">simple-icons:github</x-slot>

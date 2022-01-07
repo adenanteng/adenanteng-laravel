@@ -43,7 +43,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => [ 'l
 
     Route::get('/starter', [HomeController::class, 'starter'])->name('starter');
 
-    Route::resource('ajj', WelcomeController::class);
+    Route::resource('/', WelcomeController::class);
 
 //    Route::resource('sisw', \App\Http\Controllers\QuotesControllers::class);
 

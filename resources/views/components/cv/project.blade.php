@@ -1,4 +1,4 @@
-<div class="grid gap-2 " >
+<div class="grid gap-2 group" >
 
     <x-layout.box-link>
         <x-slot name="link">https://kiriminaja.com/</x-slot>

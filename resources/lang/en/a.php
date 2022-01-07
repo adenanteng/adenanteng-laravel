@@ -53,6 +53,12 @@ return [
     'wel t2' => "and going, and going . . .",
     'wel desc' => "- Energizer",
 
+    'quote' => "In this place freedom is absolute",
+    'quote desc' => "Write here whatever is up to you.",
+    'quote name' => "Hey, write your name here!",
+    'quote submit' => "Publish!",
+    'quote note' => "You can write anything without having to log in first.",
+
 //    '' => "",
 //    '' => "",
 //    '' => "",

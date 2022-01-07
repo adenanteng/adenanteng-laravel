@@ -8,6 +8,16 @@ use Illuminate\Routing\Controller;
 class CvController extends Controller
 {
     public function index() {
-        return view('cv');
+        $nav = collect([
+//            ['title' => 'Resume/CV', 'url' => 'https://cv.adenanteng.com' ],
+//            ['title' => 'Resume/CV', 'url' => 'https://cv.adenanteng.com' ],
+        ]);
+
+        $btn = collect([
+//            ['title' => 'a.sign in', 'url' => "login"],
+        ]);
+
+
+        return view('cv', compact('nav', 'btn'));
     }
 }

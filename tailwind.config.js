@@ -14,7 +14,7 @@ module.exports = {
         extend: {
             fontFamily: {
                 // sans: ['Nunito', ...defaultTheme.fontFamily.sans],
-                sans: ['Poppins', ...defaultTheme.fontFamily.sans],
+                sans: ['Segoe UI', 'Poppins', ...defaultTheme.fontFamily.sans],
                 head: ['Josefin Sans', ...defaultTheme.fontFamily.sans],
             },
             colors: {
@@ -23,10 +23,12 @@ module.exports = {
                 purple: colors.violet,
             },
         },
+        namedGroups: ['aku', 'kamu'],
     },
     plugins: [
         require('@tailwindcss/forms'),
         require('@tailwindcss/typography'),
         require('@tailwindcss/aspect-ratio'),
+        require("tailwindcss-named-groups"),
     ],
 }

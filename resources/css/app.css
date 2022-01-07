@@ -7,7 +7,7 @@
         @apply transition duration-500;
     }
     h1 {
-        @apply font-head;
+        @apply font-head selection:bg-fuchsia-300 selection:text-fuchsia-900;
     }
     h2 {
         @apply font-head;
@@ -66,6 +66,14 @@
     .bg-gray-50 {
         @apply dark:bg-gray-700;
     }
+
+    /*.bg-red-100 {*/
+    /*    @apply dark:bg-red-800;*/
+    /*}*/
+    /*.bg-red-200 {*/
+    /*    @apply dark:bg-red-700;*/
+    /*}*/
+
     .bg-white {
         @apply dark:bg-gray-700;
     }
