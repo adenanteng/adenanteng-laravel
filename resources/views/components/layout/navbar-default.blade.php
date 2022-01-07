@@ -91,12 +91,12 @@
         </div>
     </footer>
 
-    <div x-data="{ start: localStorage.getItem('starter') === 'true'} "
-         x-init="$watch('start', val => localStorage.setItem('starter', val))"
-         x-bind:class="{ 'starter': start }"
-    >
-        <div x-show="start === false">
-            @include('starter')
-        </div>
-    </div>
+{{--    <div x-data="{ start: localStorage.getItem('starter') === 'true'} "--}}
+{{--         x-init="$watch('start', val => localStorage.setItem('starter', val))"--}}
+{{--         x-bind:class="{ 'starter': start }"--}}
+{{--    >--}}
+{{--        <div x-show="start === false">--}}
+{{--            @include('starter')--}}
+{{--        </div>--}}
+{{--    </div>--}}
 </div>
