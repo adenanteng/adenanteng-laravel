@@ -23,7 +23,7 @@
     },
     "dependencies": {
         "@alpinejs/intersect": "^3.5.2",
-        "@iconify/iconify": "^2.1.0",
+        "@iconify/iconify": "^2.1.1",
         "@ryangjchandler/alpine-clipboard": "^2.1.0",
         "@ryangjchandler/alpine-tooltip": "^0.4.0",
         "alpinejs": "^3.5.2",
