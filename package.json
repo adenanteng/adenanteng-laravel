@@ -26,7 +26,7 @@
         "@iconify/iconify": "^2.1.0",
         "@ryangjchandler/alpine-clipboard": "^2.1.0",
         "@ryangjchandler/alpine-tooltip": "^0.4.0",
-        "alpinejs": "^3.5.2",
+        "alpinejs": "^3.8.0",
         "postcss-import": "^14.0.2"
     }
 }
